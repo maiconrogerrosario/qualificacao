@@ -1,0 +1,232 @@
+HCSR04:
+  description: "Sensor ultrassônico utilizado para medição de distância."
+
+  ontologyMapping:
+
+    classHierarchy:
+      - DeviceIoT
+      - Sensor
+      - MeasurementSensor
+      - DistanceSensor
+      - UltrasonicSensor
+      - HCSR04
+
+    objectProperties:
+
+      measuresQuantity:
+        - Distance
+
+      hasDetectionAngleUnit:
+        - Degree
+
+      hasMeasurementUnit:
+        - Centimeter
+
+      hasRequiredPin:
+        - EchoPin
+        - TriggerPin
+
+      hasSignalType:
+        - DigitalSignal
+
+      hasTimeUnit:
+        - Microsecond
+
+      useTestLibrary:
+        - AUnitLibrary
+
+    dataProperties:
+
+      hasMinValue: 2.0
+      hasMaxValue: 400.0
+      hasErrorValue: 0.0
+      hasTimeout: 30000
+
+
+  properties:
+    hasSignalType:
+      type: string
+      description: "Tipo lógico do sinal utilizado pelo sensor."
+      allowedValues:
+        - Digital
+      value: "Digital"
+
+    hasMeasurementUnit:
+      type: string
+      description: "Unidade concreta utilizada para medição da distância."
+      allowedValues:
+        - Centimeter
+      value: "Centimeter"
+
+    hasDetectionAngleUnit:
+      type: string
+      description: "Unidade utilizada para representar o ângulo de detecção."
+      allowedValues:
+        - Degree
+      value: "Degree"
+
+    hasTimeUnit:
+      type: string
+      description: "Unidade utilizada para medir a duração do pulso ultrassônico."
+      allowedValues:
+        - Microsecond
+      value: "Microsecond"
+
+    hasMinValue:
+      type: number
+      description: "Menor distância suportada pelo sensor, em centímetros."
+      value: 2.0
+
+    hasMaxValue:
+      type: number
+      description: "Maior distância suportada pelo sensor, em centímetros."
+      value: 400.0
+
+    hasResolution:
+      type: number
+      description: "Resolução aproximada da medição, em centímetros."
+      value: 0.3
+
+    hasErrorValue:
+      type: string
+      description: "Valor utilizado para representar ausência de eco ou falha de leitura."
+      value: "0"
+
+    hasPowerSupply:
+      type: string
+      description: "Tensão de alimentação utilizada pelo sensor."
+      value: "5 V DC"
+
+    hasDetectionAngle:
+      type: number
+      description: "Ângulo operacional aproximado de detecção, em graus."
+      value: 15.0
+
+    hasTimeout:
+      type: integer
+      description: "Tempo máximo de espera pelo pulso de eco, em microssegundos."
+      value: 30000
+
+    hasTriggerPulse:
+      type: integer
+      description: "Duração do pulso aplicado ao pino Trigger, em microssegundos."
+      value: 10
+
+    hasPlatform:
+      type: string
+      description: "Plataforma de execução selecionada."
+      value: "Arduino"
+
+    hasTriggerPin:
+      type: integer
+      description: "Pino digital utilizado para emitir o pulso ultrassônico."
+      allowedValues:
+        - 2
+        - 4
+        - 7
+        - 9
+      value: 7
+
+    hasEchoPin:
+      type: integer
+      description: "Pino digital utilizado para receber o pulso de eco."
+      allowedValues:
+        - 3
+        - 5
+        - 8
+        - 10
+      value: 8
+
+    hasSoundSpeed:
+      type: number
+      description: "Velocidade do som utilizada na conversão do tempo em distância, em centímetros por microssegundo."
+      value: 0.0343
+
+    hasDependencies:
+      type: object
+      editable: false
+      value:
+        productionLibraries:
+          - name: "Arduino"
+        testingLibraries:
+          - name: "AUnit"
+
+    hasHardwareInitialization:
+      type: object
+      description: "Inicialização estrutural do hardware, sem setup ou loop."
+      value:
+        constants:
+          - name: "TRIGGER_PIN"
+            type: macro
+            value: 7
+
+          - name: "ECHO_PIN"
+            type: macro
+            value: 8
+
+          - name: "TRIGGER_PULSE_US"
+            type: constant
+            dataType: unsigned long
+            value: 10
+
+          - name: "ECHO_TIMEOUT_US"
+            type: constant
+            dataType: unsigned long
+            value: 30000
+
+          - name: "SOUND_SPEED_CM_PER_US"
+            type: constant
+            dataType: float
+            value: 0.0343
+
+        pinModes:
+          - pin: "TRIGGER_PIN"
+            mode: "OUTPUT"
+
+          - pin: "ECHO_PIN"
+            mode: "INPUT"
+
+    hasFunctionalInterface:
+      type: object
+      editable: false
+      value:
+        methods:
+          - name: "pinMode"
+            parameters:
+              - name: pin
+                type: uint8_t
+              - name: mode
+                type: uint8_t
+            returns: void
+
+          - name: "digitalWrite"
+            parameters:
+              - name: pin
+                type: uint8_t
+              - name: value
+                type: uint8_t
+            returns: void
+
+          - name: "delayMicroseconds"
+            parameters:
+              - name: duration
+                type: unsigned int
+            returns: void
+
+          - name: "pulseIn"
+            parameters:
+              - name: pin
+                type: uint8_t
+              - name: state
+                type: uint8_t
+              - name: timeout
+                type: unsigned long
+            returns: unsigned long
+
+          - name: "calculateDistance"
+            parameters:
+              - name: duration
+                type: unsigned long
+            returns: float
+            expression: "(duration * SOUND_SPEED_CM_PER_US) / 2.0"
+

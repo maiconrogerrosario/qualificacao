@@ -1,0 +1,9 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT DISTINCT ?property ?value
+WHERE {
+    ?sensor ?property ?value .
+
+    FILTER(?property != rdf:type)
+}
+ORDER BY ?property ?value

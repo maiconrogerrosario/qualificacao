@@ -1,0 +1,1633 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/maico/ontologies/2026/4/untitled-ontology-95#"
+     xml:base="http://www.semanticweb.org/maico/ontologies/2026/4/untitled-ontology-95"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:opla-sd="http://ontologydesignpatterns.org/opla-sd#"
+     xmlns:iot-device-onto="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ontologydesignpatterns.org/opla-sd#entityPosition -->
+
+    <owl:AnnotationProperty rdf:about="http://ontologydesignpatterns.org/opla-sd#entityPosition"/>
+    
+
+
+    <!-- http://ontologydesignpatterns.org/opla-sd#entityPositionX -->
+
+    <owl:AnnotationProperty rdf:about="http://ontologydesignpatterns.org/opla-sd#entityPositionX"/>
+    
+
+
+    <!-- http://ontologydesignpatterns.org/opla-sd#entityPositionY -->
+
+    <owl:AnnotationProperty rdf:about="http://ontologydesignpatterns.org/opla-sd#entityPositionY"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#compatibleWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#compatibleWith">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasActuationType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasActuationType">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasDetectionAngleUnit -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasDetectionAngleUnit">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasErrorCondition -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasErrorCondition">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#Sensor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#ErrorCondition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasFinalState -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasFinalState">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasInitialState -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasInitialState">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasMeasurementUnit -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasMeasurementUnit">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#Sensor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasMicrocontroller -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasMicrocontroller">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasPins -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasPins">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasPlatform -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasPlatform">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasRequiredPin -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasRequiredPin">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasSignalType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasSignalType">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#Sensor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasState -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasState">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasTimeUnit -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasTimeUnit">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasValueRegion -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasValueRegion">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#MeasurementQuantity"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#MeasurementValueRegion"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#measuresQuantity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#measuresQuantity">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#useTestLibrary -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#useTestLibrary">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#usesLibrary -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#usesLibrary">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#usesProtocol -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#usesProtocol">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasActivationValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasActivationValue">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasDeactivationValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasDeactivationValue">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasDetectionAngle -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasDetectionAngle">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasErrorValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasErrorValue">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasMaxValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasMaxValue">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasMinValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasMinValue">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasPowerSupply -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasPowerSupply">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasResolution -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasResolution">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasTimeout -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasTimeout">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#AUnitLibrary -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#AUnitLibrary">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#TestLibrary"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">36.18616273508114</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">28.53875404475015</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#Acceleration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#Acceleration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#MeasurementQuantity"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">220.081457556846</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">247.86827972647814</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#ActuationType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#ActuationType">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">284.9338914166985</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">162.7386700713868</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#Actuator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#Actuator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#DeviceIoT"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasActuationType"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#ActuationType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasRequiredPin"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#OutputPin"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">92.08576469085983</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">50.63198985502926</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#ActuatorState -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#ActuatorState">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">50.16414695532762</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">200.75972194099475</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#AnalogSignal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#AnalogSignal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#SignalType"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">38.68877193789839</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">252.9265656430644</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#AngleUnit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#AngleUnit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#MeasurementUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#AngularVelocity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#AngularVelocity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#MeasurementQuantity"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.7399593263342956</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">280.9674008033536</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#ArduinoCoreLibrary -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#ArduinoCoreLibrary">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#MicrocontrollerLibrary"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">250.201360791615</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">779.5611313752565</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#ArduinoUnitLibrary -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#ArduinoUnitLibrary">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#TestLibrary"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">188.54062844387266</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">292.4924781754338</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#ArduinoUno -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#ArduinoUno">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#Microcontroller"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">167.35809457833366</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">272.38109628997074</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#Celsius -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#Celsius">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#TemperatureUnit"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">429.6952436283796</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">509.6269041421753</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#Centimeter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#Centimeter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#DistanceUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#CommunicationProtocol -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#CommunicationProtocol">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">289.1683684203294</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">170.79841219599834</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#DCMotor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#DCMotor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#Actuator"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasActuationType"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#RotationalMovement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasSignalType"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#DigitalSignal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasSignalType"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#PWMSignal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasState"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#ForwardState"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#OffState"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#OnState"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#ReverseState"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">216.0769944727826</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">113.79782263707568</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#DHT22 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#DHT22">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#HumiditySensor"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasMeasurementUnit"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#RelativeHumidityPercentage"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasSignalType"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#DigitalSignal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#usesProtocol"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#OneWireProtocol"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">140.0208804595702</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">245.08924712645998</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#DHTSensorLibrary -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#DHTSensorLibrary">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#SensorsLibrary"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">256.4042655493135</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">145.97785984602987</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#DS18B20 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#DS18B20">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#TemperatureSensor"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasErrorCondition"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#SensorDisconnected"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasMeasurementUnit"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#Celsius"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasRequiredPin"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#OneWireDataPin"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasSignalType"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#DigitalSignal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#useTestLibrary"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#AUnitLibrary"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#usesLibrary"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#DallasTemperatureLibrary"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#usesLibrary"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#OneWireLibrary"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#usesProtocol"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#OneWireProtocol"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">277.02180299409383</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">154.5622119055244</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#DallasTemperatureLibrary -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#DallasTemperatureLibrary">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#SensorsLibrary"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">629.7520910468701</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">190.01324371872101</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#DataPin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#DataPin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#Pin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#Degree -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#Degree">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#AngleUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#DeviceIoT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#DeviceIoT">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasMicrocontroller"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#Microcontroller"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasPowerSupply"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">291.26408676562636</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">48.48770430492793</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#DigitalSignal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#DigitalSignal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#SignalType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#Distance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#Distance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#MeasurementQuantity"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">92.07774383631154</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">185.90879508998907</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#DistanceSensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#DistanceSensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#MeasurementSensor"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#measuresQuantity"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#Distance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#DistanceUnit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#DistanceUnit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#MeasurementUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#EchoPin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#EchoPin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#InputPin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#ElectricCurrent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#ElectricCurrent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#MeasurementQuantity"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">247.87778961761293</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">160.9465147534431</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#ElectricUnit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#ElectricUnit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#MeasurementUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#ErrorCondition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#ErrorCondition"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#Fahrenheit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#Fahrenheit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#TemperatureUnit"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">275.88918128391623</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">268.345051583458</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#ForwardState -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#ForwardState">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#ActuatorState"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">104.9640738996388</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">155.24298782026918</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#HCSR04 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#HCSR04">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#UltrasonicSensor"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasDetectionAngleUnit"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#Degree"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasMeasurementUnit"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#Centimeter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasRequiredPin"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#EchoPin"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasRequiredPin"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#TriggerPin"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasSignalType"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#DigitalSignal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasTimeUnit"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#Microsecond"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#useTestLibrary"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#AUnitLibrary"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#Humidity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#Humidity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#MeasurementQuantity"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">200.22805002731297</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">204.94331304701194</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#HumiditySensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#HumiditySensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#MeasurementSensor"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasMeasurementUnit"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#HumidityUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#measuresQuantity"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#Humidity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasResolution"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">121.63227394934383</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">197.88350094418038</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#HumidityUnit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#HumidityUnit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#MeasurementUnit"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">191.19191559146975</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">279.5170626349487</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#InputPin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#InputPin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#Pin"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">290.4483523626062</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">227.2862589969037</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#Kelvin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#Kelvin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#TemperatureUnit"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">589.5734204651064</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">770.1437023289145</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#Led -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#Led">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#Actuator"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasFinalState"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#OnState"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasInitialState"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#OffState"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasActivationValue"/>
+                <owl:hasValue>HIGH</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">257.19308429911996</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">296.5640493563847</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#LightEmission -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#LightEmission">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#ActuationType"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">134.70025974476803</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">267.55946434849636</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#Luminosity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#Luminosity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#MeasurementQuantity"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">267.55820755931154</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">16.48456691631068</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#LuminositySensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#LuminositySensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#MeasurementSensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#MeasurementQuantity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#MeasurementQuantity">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">30.975960872702732</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">260.4754895361498</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#MeasurementSensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#MeasurementSensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#Sensor"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasErrorValue"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasMaxValue"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasMinValue"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasResolution"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#MeasurementUnit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#MeasurementUnit">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">470.1426316329016</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">20.140171440515303</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#MeasurementValueRegion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#MeasurementValueRegion"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#Meter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#Meter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#DistanceUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#Microcontroller -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#Microcontroller">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">63.37505070796956</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">198.34028861061233</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#MicrocontrollerLibrary -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#MicrocontrollerLibrary">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#SoftwareLibrary"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">238.37674265654937</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">220.6963783840309</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#Microsecond -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#Microsecond">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#TimeUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#Millimeter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#Millimeter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#DistanceUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#NegativeValueRegion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#NegativeValueRegion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#MeasurementValueRegion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#OffState -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#OffState">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#ActuatorState"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">94.85985912551536</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">242.14477554893395</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#OnState -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#OnState">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#ActuatorState"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">259.11160691639276</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">276.90460646119516</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#OneWireDataPin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#OneWireDataPin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#DataPin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#OneWireLibrary -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#OneWireLibrary">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#SensorsLibrary"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#OneWireProtocol -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#OneWireProtocol">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#CommunicationProtocol"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">241.9485151200303</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">95.61070994190837</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#OutputPin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#OutputPin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#Pin"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">202.39278805901347</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">150.0397696842692</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#PWMSignal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#PWMSignal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#SignalType"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">138.94927518533808</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">82.13981879486239</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#Pin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#Pin">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">293.1892082625775</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">72.90226454671448</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#PositiveValueRegion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#PositiveValueRegion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#MeasurementValueRegion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#Pressure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#Pressure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#MeasurementQuantity"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">91.32945653583263</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">76.95935438317774</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#RelativeHumidityPercentage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#RelativeHumidityPercentage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#HumidityUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#ReverseState -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#ReverseState">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#ActuatorState"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">117.47748564190779</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">23.117294703543415</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#RotationalMovement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#RotationalMovement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#ActuationType"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">186.86139768616025</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">273.78617784631</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#Sensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#Sensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#DeviceIoT"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">158.56701344697987</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">116.31083150730632</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#SensorDisconnected -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#SensorDisconnected">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#ErrorCondition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#SensorsLibrary -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#SensorsLibrary">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#SoftwareLibrary"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">238.69654319598007</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">233.6750167152572</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#SignalType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#SignalType">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">292.9723293268753</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">244.10763660273264</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#SoftwareLibrary -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#SoftwareLibrary">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">196.3327805624147</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">290.0973784483364</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#Temperature -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#Temperature">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#MeasurementQuantity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasValueRegion"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#NegativeValueRegion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasValueRegion"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#PositiveValueRegion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasValueRegion"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#ZeroValueRegion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3.3676902633867907</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">295.42165130939827</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#TemperatureSensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#TemperatureSensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#MeasurementSensor"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#hasMeasurementUnit"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#TemperatureUnit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#measuresQuantity"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#Temperature"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">155.54986415875624</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">117.21420715594493</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#TemperatureUnit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#TemperatureUnit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#MeasurementUnit"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">599.7152268879257</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">440.3908903734081</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#TestLibrary -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#TestLibrary">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#SoftwareLibrary"/>
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">14.761888695415504</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">198.62944688247293</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#TimeUnit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#TimeUnit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#MeasurementUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#TriggerPin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#TriggerPin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#OutputPin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#UltrasonicSensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#UltrasonicSensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#DistanceSensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#Volt -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#Volt">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#ElectricUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#ZeroValueRegion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#ZeroValueRegion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#MeasurementValueRegion"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#DS18B20_01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#DS18B20_01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#DS18B20"/>
+        <iot-device-onto:hasErrorValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-127.0</iot-device-onto:hasErrorValue>
+        <iot-device-onto:hasMaxValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">125.0</iot-device-onto:hasMaxValue>
+        <iot-device-onto:hasMinValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-55.0</iot-device-onto:hasMinValue>
+        <iot-device-onto:hasResolution rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0625</iot-device-onto:hasResolution>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#HCSR04_01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#HCSR04_01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#HCSR04"/>
+        <iot-device-onto:hasErrorValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</iot-device-onto:hasErrorValue>
+        <iot-device-onto:hasMaxValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">400.0</iot-device-onto:hasMaxValue>
+        <iot-device-onto:hasMinValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</iot-device-onto:hasMinValue>
+        <iot-device-onto:hasTimeout rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30000</iot-device-onto:hasTimeout>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">128.9056983153321</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">249.84931468736914</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">165.12423120262645</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">287.2138132337611</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">230.27222993974567</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">449.8912487299843</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">192.30188756655298</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">248.96498178197712</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">232.74345532291534</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">182.85136119946742</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">272.51389690460985</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">224.2781750525938</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#NegativeValueRegion"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#PositiveValueRegion"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2026/4/iot-device-onto#ZeroValueRegion"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

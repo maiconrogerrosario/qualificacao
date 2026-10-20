@@ -1,0 +1,134 @@
+DS18B20:
+  description: "Sensor de temperatura digital baseado no protocolo OneWire"
+
+  ontologyMapping:
+
+    classHierarchy:
+      - DeviceIoT
+      - Sensor
+      - MeasurementSensor
+      - TemperatureSensor
+      - DS18B20
+
+    objectProperties:
+
+      measuresQuantity:
+        - Temperature
+
+      hasMeasurementUnit:
+        - Celsius
+
+      hasValueRegion:
+        - NegativeValueRegion
+        - ZeroValueRegion
+        - PositiveValueRegion
+
+      hasSignalType:
+        - DigitalSignal
+
+      hasRequiredPin:
+        - OneWireDataPin
+
+      usesProtocol:
+        - OneWireProtocol
+
+      usesLibrary:
+        - OneWireLibrary
+        - DallasTemperatureLibrary
+
+      useTestLibrary:
+        - AUnitLibrary
+
+      hasErrorCondition:
+        - SensorDisconnected
+
+    dataProperties:
+
+      hasMinValue: -55.0
+      hasMaxValue: 125.0
+      hasResolution: 0.0625
+      hasErrorValue: -127.0
+
+      OneWireLibrary:
+        dataProperties:
+          hasLibraryName: "OneWire"
+
+      DallasTemperatureLibrary:
+        dataProperties:
+          hasLibraryName: "DallasTemperature"
+
+      AUnitLibrary:
+        dataProperties:
+          hasLibraryName: "AUnit"
+
+
+
+  properties:
+
+    hasMeasurementUnit:
+      type: string
+      description: "Unidade concreta utilizada na medição da distância."
+      editable: false
+      allowedValues:
+        - Centimeter
+      value: Centimeter
+
+    hasMinValue:
+      type: number
+      description: "Menor distância suportada pelo sensor, em centímetros."
+      editable: false
+      value: 2.0
+
+    hasMaxValue:
+      type: number
+      description: "Maior distância suportada pelo sensor, em centímetros."
+      editable: false
+      value: 400.0
+
+    hasErrorValue:
+      type: number
+      description: "Valor de erro utilizado para representar ausência de leitura válida."
+      editable: false
+      value: 0.0
+
+    hasTimeout:
+      type: integer
+      description: "Tempo máximo de espera pelo pulso de eco, em microssegundos."
+      editable: false
+      value: 30000
+
+    hasPlatform:
+      type: string
+      description: "Plataforma de execução selecionada."
+      editable: true
+      allowedValues:
+        - Arduino
+      value: Arduino
+
+    hasTriggerPin:
+      type: integer
+      description: "Pino digital utilizado para emitir o pulso Trigger."
+      editable: true
+      allowedValues:
+        - 2
+        - 4
+        - 7
+        - 9
+      value: 9
+
+    hasEchoPin:
+      type: integer
+      description: "Pino digital utilizado para receber o pulso Echo."
+      editable: true
+      allowedValues:
+        - 3
+        - 5
+        - 8
+        - 10
+      value: 10
+
+    AUnitLibrary:
+      type: string
+      description: "Biblioteca utilizada para execução dos testes."
+      editable: false
+      value: "AUnit"

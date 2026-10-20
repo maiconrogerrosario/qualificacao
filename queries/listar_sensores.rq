@@ -1,0 +1,23 @@
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT
+    ?sensor
+    ?sensorType
+    ?label
+    ?description
+WHERE {
+    ?sensor rdf:type ?sensorType .
+
+    ?sensorType rdfs:subClassOf+
+        ?sensorBaseClass .
+
+    OPTIONAL {
+        ?sensor rdfs:label ?label .
+    }
+
+    OPTIONAL {
+        ?sensor rdfs:comment ?description .
+    }
+}
+ORDER BY ?sensor
